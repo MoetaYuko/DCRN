@@ -60,6 +60,10 @@ def setup():
         opt.args.gamma_value = 1e3
         opt.args.lr = 1e-3
 
+    elif opt.args.name == 'cora':
+        opt.args.n_clusters = 7
+        opt.args.n_input = 100
+
     else:
         print("error!")
         print("please add the new dataset's parameters")
